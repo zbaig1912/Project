@@ -78,5 +78,90 @@
         "fields": {
           "name":"Aqua Works Inc."
         }
+    },
+    {
+        "model": "app.Product",
+        "pk": 1,
+        "fields": {
+            "name": "Green Chemical",
+            "price": 550
+        }
+    },
+    {
+        "model": "app.Product",
+        "pk": 2,
+        "fields": {
+            "name": "Heavy Metal",
+            "price": 580
+        }
+    },
+    {
+        "model": "app.Product",
+        "pk": 3,
+        "fields": {
+            "name": "Costly Arrows",
+            "price": 200
+        }
+    },
+    {
+        "model": "app.Product",
+        "pk": 4,
+        "fields": {
+            "name": "Strong Shield",
+            "price": 900
+        }
+    },
+    {
+        "model": "app.Product",
+        "pk": 5,
+        "fields": {
+            "name": "Heavy Hammer",
+            "price": 400
+        }
+    },
+    {
+        "model": "app.Transaction",
+        "pk": 1,
+        "fields": {
+            "product":1,
+            "total":550,
+            "user":1
+        }
+    },
+    {
+        "model": "app.Transaction",
+        "pk": 2,
+        "fields": {
+            "product":2,
+            "total":580,
+            "user":2
+        }
+    },
+    {
+        "model": "app.Transaction",
+        "pk": 3,
+        "fields": {
+            "product":3,
+            "total":200,
+            "user":3
+        }
+    },
+    {
+        "model": "app.Transaction",
+        "pk": 4,
+        "fields": {
+            "product":4,
+            "total":900,
+            "user":4
+        }
+    },
+    {
+        "model": "app.Transaction",
+        "pk": 5,
+        "fields": {
+            "product":5,
+            "total":400,
+            "user":5
+        }
     }
 ]

@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <TabNav :tabs="['USERS', 'TRANSACTIONS']" :selected="selected" @selected="setSelected" >
-            <Tab :isSelected="selected === 'USERS'" >
-                <Table></Table>
+            <Tab :isSelected="selected === 'USERS'">
+                <Table :headers="['ID', 'Name', 'Email', 'Firm']" :tabSelected=selected></Table>
             </Tab>
             <Tab :isSelected="selected === 'TRANSACTIONS'" >
-                <h1>More test text</h1>
+                <Table :headers="['ID', 'Product', 'Total', 'User']" :tabSelected=selected></Table>
             </Tab>
         </TabNav>
     </div>
@@ -15,17 +15,19 @@
     import TabNav from './components/TabNav.vue';
     import Tab from './components/Tab.vue';
     import Table from './components/Table.vue';
+
     export default {
         name: 'app',
         components: { TabNav, Tab, Table },
         data() {
         return {
-            selected: 'Home'
+            selected: ''
         }
         },
         methods: {
         setSelected(tab) {
             this.selected = tab;
+            console.log(tab);
         }
         }
     }

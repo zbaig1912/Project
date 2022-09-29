@@ -40,7 +40,7 @@
         "pk": 5,
         "fields": {
           "name":"Chris Hemsworth ",
-          "email": "john.doe@aquaworks.com",
+          "email": "chris.hemsworth@aquaworks.com",
           "firm": 5
         }
     },

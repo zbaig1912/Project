@@ -3,10 +3,11 @@ from app.models import User, Firm, Product, Transaction
 
 
 class FirmSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField()
     name = serializers.CharField(max_length=120, allow_blank=True)
     class Meta:
         model = Firm
-        fields = ['name']
+        fields = ['id','name']
 
 class UserSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField()

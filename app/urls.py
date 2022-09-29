@@ -23,6 +23,13 @@ from django.conf.urls import url, include
 router = routers.DefaultRouter() 
 router.register(r'users', views.UserViewSet)
 router.register(r'trans', views.TransactionViewSet)
+router.register(r'firm', views.FirmViewSet)
+router.register(r'product', views.ProductViewSet)
+
+router.register(r'firm/<int:user_id>', views.FirmViewSet)
+router.register(r'users/<int:user_id>', views.UserViewSet)
+router.register(r'product/<int:user_id>', views.UserViewSet)
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

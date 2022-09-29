@@ -77,7 +77,14 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 DATABASE_URL = os.environ.get('DATABASE_URL')
 DATABASES = {
-    'default': dj_database_url.config(default=DATABASE_URL)
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'zbaig',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5431',
+    }
 }
 
 

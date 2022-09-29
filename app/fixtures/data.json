@@ -1,0 +1,82 @@
+[
+    {
+      "model": "app.User",
+      "pk": 1,
+      "fields": {
+        "name":"Robert Bruce",
+        "email": "robert.bruce@brucechemicals.com",
+        "firm": 1
+      }
+    },
+    {
+        "model": "app.User",
+        "pk": 2,
+        "fields": {
+          "name":"Tony Stark",
+          "email": "tony.stark@starkcorp.com",
+          "firm": 2
+        }
+    },
+    {
+        "model": "app.User",
+        "pk": 3,
+        "fields": {
+          "name":"Clint Barton",
+          "email": "clint.barton@hawkeye.com",
+          "firm": 3
+        }
+    },
+    {
+        "model": "app.User",
+        "pk": 4,
+        "fields": {
+          "name":"Steve Rogers",
+          "email": "steve.rogers@captainamerica.com",
+          "firm": 4
+        }
+    },
+    {
+        "model": "app.User",
+        "pk": 5,
+        "fields": {
+          "name":"Chris Hemsworth ",
+          "email": "john.doe@aquaworks.com",
+          "firm": 5
+        }
+    },
+    {
+        "model": "app.Firm",
+        "pk": 1,
+        "fields": {
+          "name":"Bruce Chemical Inc."
+        }
+    },
+    {
+        "model": "app.Firm",
+        "pk": 2,
+        "fields": {
+          "name":"Stark Corp."
+        }
+    },
+    {
+        "model": "app.Firm",
+        "pk": 3,
+        "fields": {
+          "name":"Hawkeye Inc."
+        }
+    },
+    {
+        "model": "app.Firm",
+        "pk": 4,
+        "fields": {
+          "name":"Captain America ltd."
+        }
+    },
+    {
+        "model": "app.Firm",
+        "pk": 5,
+        "fields": {
+          "name":"Aqua Works Inc."
+        }
+    }
+]

@@ -20,14 +20,13 @@
         name: 'app',
         components: { TabNav, Tab, Table },
         data() {
-        return {
-            selected: ''
-        }
+            return {
+                selected: ''
+            }
         },
         methods: {
         setSelected(tab) {
             this.selected = tab;
-            console.log(tab);
         }
         }
     }
